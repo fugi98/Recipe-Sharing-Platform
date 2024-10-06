@@ -1,3 +1,23 @@
+# Recipe Sharing Platform
+
+## Overview
+A collaborative recipe-sharing platform where users can submit, edit, and search for recipes from around the world.
+
+## Features
+- User Authentication
+- Recipe Management (CRUD)
+- Tagging and Search
+- Comments & Ratings
+- Favorites
+- Dark Mode Toggle
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/recipe-sharing-platform.git
+   cd recipe-sharing-platform
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
