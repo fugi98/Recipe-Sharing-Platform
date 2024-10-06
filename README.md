@@ -18,6 +18,20 @@ A collaborative recipe-sharing platform where users can submit, edit, and search
    cd recipe-sharing-platform
 
 
+---
+
+### **Step 6: Publish on GitHub**
+
+1. **Create a new GitHub repository**.
+2. **Push your local project** to GitHub:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/yourusername/recipe-sharing-platform.git
+   git push -u origin main
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
