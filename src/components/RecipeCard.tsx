@@ -1,24 +1,25 @@
 // src/components/RecipeCard.tsx
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-const RecipeCard = () => {
+const RecipeCard = ({ recipe }: any) => {
   return (
     <Card>
       <CardMedia
         component="img"
         height="140"
         image="https://source.unsplash.com/random"
-        alt="Recipe Image"
+        alt={recipe.name}
       />
       <CardContent>
         <Typography gutterBottom variant="h5">
-          Recipe Name
+          {recipe.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          This is a brief description of the recipe.
+          {recipe.description.substring(0, 100)}...
         </Typography>
-        <Button size="small" variant="contained" color="primary">
+        <Button size="small" component={Link} to={`/recipe/${recipe.id}`} variant="contained">
           View Recipe
         </Button>
       </CardContent>
